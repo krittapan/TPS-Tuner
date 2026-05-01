@@ -1,291 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TPS Tuner - Privacy Policy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — TPS TURNER</title>
   <style>
     :root {
-      --bg: #0b1220;
-      --card: #111a2e;
-      --card-2: #16213a;
-      --text: #e8eefc;
-      --muted: #a8b3cf;
-      --line: rgba(255,255,255,0.10);
-      --accent: #7cc4ff;
-      --accent-2: #9ef0c7;
-      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      color-scheme: light dark;
+      --fg: #111;
+      --bg: #fff;
+      --muted: #555;
+      --border: #ddd;
     }
-
-    * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f2f2f2;
+        --bg: #121212;
+        --muted: #aaa;
+        --border: #333;
+      }
     }
-
     body {
-      margin: 0;
-      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(124,196,255,0.12), transparent 30%),
-        radial-gradient(circle at top right, rgba(158,240,199,0.10), transparent 28%),
-        linear-gradient(180deg, #09101c 0%, var(--bg) 100%);
-      color: var(--text);
-      line-height: 1.7;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+      max-width: 42rem;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: var(--fg);
+      background: var(--bg);
     }
-
-    .container {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .hero {
-      padding: 72px 0 28px;
-    }
-
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-    }
-
-    .eyebrow {
-      display: inline-block;
-      padding: 6px 12px;
-      border: 1px solid rgba(124,196,255,0.30);
-      background: rgba(124,196,255,0.10);
-      color: var(--accent);
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 16px 0 10px;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.1;
-    }
-
-    .subtitle {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .meta {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .meta-item {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px;
-    }
-
-    .meta-label {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 4px;
-    }
-
-    .meta-value {
-      font-weight: 700;
-    }
-
-    .content {
-      padding: 12px 0 72px;
-    }
-
-    .policy-card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 18px;
-      box-shadow: var(--shadow);
-    }
-
-    .section {
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 24px;
-      margin: 14px 0;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 1.35rem;
-      color: #ffffff;
-    }
-
-    p {
-      margin: 0 0 12px;
-      color: var(--text);
-    }
-
-    ul {
-      margin: 10px 0 0 0;
-      padding-left: 22px;
-    }
-
-    li {
-      margin: 8px 0;
-      color: var(--text);
-    }
-
-    strong {
-      color: #ffffff;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .contact-box {
-      background: linear-gradient(135deg, rgba(124,196,255,0.10), rgba(158,240,199,0.08));
-      border: 1px solid rgba(124,196,255,0.22);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      padding: 20px 0 40px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 640px) {
-      .hero {
-        padding-top: 28px;
-      }
-
-      .hero-card,
-      .policy-card,
-      .section {
-        border-radius: 18px;
-      }
-
-      .hero-card {
-        padding: 22px;
-      }
-
-      .section {
-        padding: 18px;
-      }
-    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.25rem; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    a { color: inherit; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="hero">
-      <div class="hero-card">
-        <span class="eyebrow">Legal</span>
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">This Privacy Policy explains how TPS Tuner accesses and uses information to provide its core functionality.</p>
+  <nav style="margin-bottom:1.25rem;font-size:.95rem"><strong>Privacy Policy</strong> · <a href="./support.html">Support</a></nav>
+  <h1>Privacy Policy</h1>
+  <p class="meta"><strong>TPS TURNER</strong> · Effective date: 1 May 2026</p>
 
-        <div class="meta">
-          <div class="meta-item">
-            <div class="meta-label">App Name</div>
-            <div class="meta-value">TPS Tuner</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Developer</div>
-            <div class="meta-value">Pktshop</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Effective Date</div>
-            <div class="meta-value">2026-04-23</div>
-          </div>
-        </div>
-      </div>
-    </header>
+  <h2>1. Introduction</h2>
+  <p>
+    This Privacy Policy describes how <strong>Zenlabth</strong> (“we”, “us”) handles information when you use the mobile application <strong>TPS TURNER</strong> (“App”) on iOS.
+  </p>
 
-    <main class="content">
-      <div class="policy-card">
-        <section class="section">
-          <h2>1. Information the App Accesses</h2>
-          <p>TPS Tuner may access the following only to provide core functionality:</p>
-          <ul>
-            <li><strong>Bluetooth</strong>: to scan, connect, and communicate with TPS devices.</li>
-            <li><strong>Location (while in use)</strong>: required by some Android versions for Bluetooth scanning.</li>
-            <li><strong>Local files</strong>: only when users explicitly import or export configuration files.</li>
-          </ul>
-        </section>
+  <h2>2. Information the App processes</h2>
+  <p>The App helps you configure and interact with supported hardware using <strong>Bluetooth Low Energy (BLE)</strong>. Depending on your actions, the App may process:</p>
+  <ul>
+    <li><strong>Device communication data</strong> exchanged over BLE between your iPhone or iPad and your hardware (for example, configuration values and status information while you use the App).</li>
+    <li><strong>Files you choose</strong> using the system file or photo picker (for example, when you import or export configuration data), processed on your device as part of app functionality.</li>
+  </ul>
 
-        <section class="section">
-          <h2>2. How Information Is Used</h2>
-          <p>Information is used to:</p>
-          <ul>
-            <li>connect to supported devices,</li>
-            <li>send and receive tuning configuration data,</li>
-            <li>read and save configuration files selected by users,</li>
-            <li>show app and connection status.</li>
-          </ul>
-        </section>
+  <h2>3. Personal data collection</h2>
+  <p>
+    We do <strong>not</strong> intentionally collect personal information such as your name, email address, phone number, or precise location through the App for our own purposes.
+  </p>
+  <p>
+    If you contact us for support, we may receive information you voluntarily provide (for example, your email address and message content) solely to respond to your request.
+  </p>
 
-        <section class="section">
-          <h2>3. Data Collection and Sharing</h2>
-          <ul>
-            <li>TPS Tuner does <strong>not sell personal data</strong>.</li>
-            <li>TPS Tuner does <strong>not automatically share personal data with third parties</strong>.</li>
-            <li>Configuration data is handled locally on user devices and in user-selected files.</li>
-          </ul>
-        </section>
+  <h2>4. Third-party services</h2>
+  <p>
+    The App relies on standard platform services provided by <strong>Apple</strong> (for example, permission prompts and system pickers). We do not sell your personal information.
+  </p>
+  <p>
+    If we integrate third-party analytics or crash reporting in the future, we will update this policy and the App Store privacy disclosures accordingly.
+  </p>
 
-        <section class="section">
-          <h2>4. Permissions</h2>
-          <p>The app requests only permissions needed for functionality:</p>
-          <ul>
-            <li>Bluetooth permissions</li>
-            <li>Location permission (when required for BLE scanning)</li>
-            <li>File access permissions (when users choose files)</li>
-          </ul>
-          <p class="muted">Users can revoke permissions at any time in system settings.</p>
-        </section>
+  <h2>5. Data storage and retention</h2>
+  <p>
+    Configuration data you import or export is stored and managed on your device (or locations you choose through iOS), unless you separately choose to share it outside the App. The App does not require a user account as described in this policy.
+  </p>
 
-        <section class="section">
-          <h2>5. Data Security</h2>
-          <p>Reasonable measures are applied to protect data handled by the app.</p>
-        </section>
+  <h2>6. Security</h2>
+  <p>
+    We follow reasonable practices for a local companion utility. No method of electronic transmission is completely secure.
+  </p>
 
-        <section class="section">
-          <h2>6. Children's Privacy</h2>
-          <p>This app is not directed to children under 13 and does not knowingly collect personal data from children.</p>
-        </section>
+  <h2>7. Children’s privacy</h2>
+  <p>
+    The App is not directed to children under the age required in your region, and we do not knowingly collect personal information from children.
+  </p>
 
-        <section class="section">
-          <h2>7. Changes to This Policy</h2>
-          <p>This policy may be updated from time to time. The effective date above will be revised when changes are made.</p>
-        </section>
+  <h2>8. International users</h2>
+  <p>
+    If you use the App outside Thailand, information may be processed where you use the device and where you contact us.
+  </p>
 
-        <section class="section contact-box">
-          <h2>8. Contact</h2>
-          <p>If you have questions about this Privacy Policy, contact:</p>
-          <p><strong>Email:</strong> <a href="mailto:your-email@example.com">pktshop.dev@gmail.com</a></p>
-        </section>
-      </div>
-    </main>
+  <h2>9. Changes</h2>
+  <p>
+    We may update this Privacy Policy from time to time. The effective date at the top of this page will change when we do.
+  </p>
 
-    <footer>
-      © 2026 PKT SHOP. All rights reserved.
-    </footer>
-  </div>
+  <h2>10. Contact</h2>
+  <p>
+    Questions about this policy:
+    <!-- Replace with your public support email -->
+    <strong><a href="mailto:krittapan.msl@gmail.com">krittapan.msl@gmail.com</a></strong>
+  </p>
+
+  <hr />
+  <p class="meta">This page is published for App Store disclosure purposes.</p>
 </body>
 </html>
